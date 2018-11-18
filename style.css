@@ -1,0 +1,152 @@
+/*!
+Theme Name: comedian
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: comedian
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+body,h1,h2,h3,h4,h5,h6,p,a{
+	font-family: Calibri;
+	color: #B08CA8;
+}
+body{
+	font-family: Calibri;
+	color: #d2cecd;
+	font-size: 20px;
+
+}
+.cn-text-highlighted{
+	color: #b08ca8;
+	font-style: italic;
+}
+
+
+.navbar-inverse {
+	background-color: transparent;
+	border-color: transparent;
+	border: none;
+}
+.navbar {
+	margin-top: 50px;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	color: #322D34;
+	background-color: #B08CA8;
+}
+.navbar-inverse .navbar-nav>li{
+	margin: 5px auto;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #322D34;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: Calibri;
+	background-color: #D2CECD;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 0px 7px 7px 0;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+	color: #322D34;
+	background-color: #B08CA8;
+}
+
+/*Socaila Icon*/
+
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	padding-left: 0;
+    padding-right: 0;
+}
+
+
+.navbar .social-icon {
+	text-align: center;
+}
+.navbar .social-icon ul.social-circle li a {
+	color: #564358;
+}
+.navbar .social-icon ul.social-circle li{
+    /*width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background: #D2CECD;*/
+}
+
+.navbar .social-icon ul.social-circle li .circle-icon {
+    background: #D2CECD;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* footer social icons */
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/**
+Home Page CSS
+ */
+.home_person_content{
+	margin-top: 10%;
+}
+
+.home_person_image img {
+	width: 100%;
+}
+.home_brand_image img {
+	width: 100%;
+}
+
+/**
+About US page
+ */
+
+.testimonial_speech .wpb_content_element{
+	margin-bottom: 15px;
+}
+.testimonial_speech p{
+	color: #d2cecd;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 21px;
+	font-style: italic;
+}
+
+.heart_behind .wpb_text_column.wpb_content_element {
+	margin-bottom: 0;
+	padding: 7px;
+}
+.heart_behind.wpb_column.vc_column_container.vc_col-sm-12.vc_col-has-fill {
+	padding-top: 20px;
+}
+

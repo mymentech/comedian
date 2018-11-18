@@ -39,6 +39,12 @@ Woocommerce Styles
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before,.woocommerce div.product .woocommerce-tabs ul.tabs li::after{
+    display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs{
+    padding: inherit;
+}
 
 .woocommerce ul.products li.product .price{
     color: #fff;

@@ -20,13 +20,26 @@ Woocommerce Styles
     background-color: rgba(1,1,1,.3);
     padding: 15px !important;
 }
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    color: #fff;
+    background-color: #000;
+}
+.woocommerce div.product form.cart .button {
+    font-size: 17px;
+}
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active{
     background: #935386;
     border-bottom-color: #0f0f0f;
 }
 .woocommerce span.onsale{
-    background: #504A61
+    background: #935386;
+    height: 3.236em;
+    width: 3.236em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
+
 .woocommerce ul.products li.product .price{
     color: #fff;
 }

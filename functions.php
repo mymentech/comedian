@@ -6,7 +6,7 @@
  *
  * @package comedian
  */
-
+define('COMEDIAN_VERSION', time());
 require_once get_theme_file_path( 'inc/bootstrap-walker-nav.php' );
 require_once get_theme_file_path( 'inc/csf/cs-framework.php' );
 require_once get_theme_file_path( 'inc/comedian-csf.php' );
@@ -130,13 +130,13 @@ add_action( 'widgets_init', 'comedian_widgets_init' );
 function comedian_scripts() {
 	wp_enqueue_style( 'bootstrap-css', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), null, '3.3.7' );
 	wp_enqueue_style( 'font-awesome-css', get_theme_file_uri( '/assets/css/font-awesome.min.css' ), null, '4.7.0' );
-	wp_enqueue_style( 'comedian-navbar-fixed-left', get_theme_file_uri( '/assets/css/navbar-fixed-left.min.css' ), null, time() );
-	wp_enqueue_style( 'comedian-styles-css', get_theme_file_uri( '/assets/css/styles.css' ), null, time() );
-	wp_enqueue_style( 'comedian-style', get_stylesheet_uri(), null, time() );
+	wp_enqueue_style( 'comedian-navbar-fixed-left', get_theme_file_uri( '/assets/css/navbar-fixed-left.min.css' ), null, COMEDIAN_VERSION );
+	wp_enqueue_style( 'comedian-styles-css', get_theme_file_uri( '/assets/css/styles.css' ), null, COMEDIAN_VERSION );
+	wp_enqueue_style( 'comedian-style', get_stylesheet_uri(), null, COMEDIAN_VERSION );
 
 
     wp_enqueue_script( 'bootstrap-js', get_theme_file_uri( '/assets/js/bootstrap.min.js' ), array( 'jquery' ), '4.7.0', true );
-    wp_enqueue_script( 'comedian-scripts', get_theme_file_uri( '/assets/js/comedian-scripts.js' ), array( 'jquery' ), time(), true );
+    wp_enqueue_script( 'comedian-scripts', get_theme_file_uri( '/assets/js/comedian-scripts.js' ), array( 'jquery' ), COMEDIAN_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
